@@ -17,15 +17,15 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  # - type: dnf
-  #   install:
-  #     packages:
-  #       - initial-setup-gui
+  - type: dnf
+    install:
+      packages:
+        - initial-setup-gui
 
-  # - type: systemd
-  #   system:
-  #     enabled:
-  #       - initial-setup.service
+  - type: systemd
+    system:
+      enabled:
+        - initial-setup.service
 
   # - type: dnf
   #   repos:
