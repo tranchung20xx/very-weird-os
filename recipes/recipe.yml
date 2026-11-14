@@ -20,7 +20,7 @@ modules:
   - type: dnf
     install:
       packages:
-        - initial-setup-gui
+        - initial-setup
 
   - type: systemd
     system:
